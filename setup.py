@@ -10,7 +10,7 @@ requires = [
     'awscli',
 ]
 
-Extras_require = dict(
+extras_require = dict(
     dev=[],
 )
 
@@ -18,7 +18,7 @@ Extras_require = dict(
 # eggs that you need if you're running a version of python lower than 2.7
 #
 setup(
-    name='vid.aws',
+    name='aws',
     version='0.1.0',
     description='Vid Tools - AWS',
     long_description=README + '\n\n' + CHANGES,
@@ -39,7 +39,7 @@ setup(
     install_requires=requires,
     extras_require=extras_require,
     tests_require=requires,
-    test_suite="vid.aws.tests",
+    test_suite="aws.tests",
     # find ott | grep py$ | xargs grep "def.main"
     entry_points="""
         [console_scripts]
